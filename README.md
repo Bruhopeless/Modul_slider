@@ -1,7 +1,7 @@
 # Multiply v5.0
 
-Плагин позволяет создавать таблицы умножения
-Для начала ознакомьтесь с  https://multiply.github.io/Multiply/.**
+Модуля позволяет создавать таблицы умножения
+Для начала ознакомьтесь с  https://bruhopeless.github.io/Modul_slider/docs/started-welcome.html.**
 
 ## Быстрый старт
 
@@ -14,28 +14,34 @@
 Поместите  таблицу стилей на [вверху]:
 
 ```html
-<link rel="stylesheet" href="multiply.css" />
+<link rel="stylesheet" href="style.css">
 ```
 
 Поместите скрипты в нижнюю часть: 
 
 ```html
-<script src="lodash.js"></script>
-<script src="multiply.js"></script>
+<script src="gallery.js"></script>
 ```
 
 ### Использование
 Добавьте в структуру элемент контейнера 
 
 `` `` HTML
-<div class = "multiply"></div>
+        <div class="photo">
+          <img src="img/gallery_img1.jpg" alt="">
+          <img src="img/gallery_img2.jpg" alt="">
+          <img src="img/gallery_img3.jpg" alt="">
+          <img src="img/gallery_img4.jpg" alt="">
+          <img src="img/gallery_img5.jpg" alt="">
+          <img src="img/gallery_img6.jpg" alt="">
+        </div>
 `` `
-** ПРИМЕЧАНИЕ. ** Вы можете использовать другой класс или id. В таком случае при подключении плагина необходимо указать соответствующий класс.
+** ПРИМЕЧАНИЕ. ** Вы можете использовать другой класс или id. В таком случае при подключении модуля необходимо указать соответствующий класс.
 
 
 ## Документация
 
-Документация, включенная в это репо в корневом каталоге и общедоступна на https://multiply.github.io/Multiply/. Документация также может выполняться локально.
+Документация, включенная в это репо в корневом каталоге и общедоступна на  https://bruhopeless.github.io/Modul_slider/. Документация также может выполняться локально.
 
 
 
