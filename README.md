@@ -1,4 +1,4 @@
-# Multiply v5.0
+# Slider v1.0
 
 Модуля позволяет создавать таблицы умножения
 Для начала ознакомьтесь с  https://bruhopeless.github.io/Modul_slider/docs/started-welcome.html.**
