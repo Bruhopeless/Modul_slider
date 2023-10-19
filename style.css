@@ -1,0 +1,28 @@
+a{
+    text-decoration: none;
+    color: inherit;
+  }
+  #slider{
+    margin: 100px;
+  }
+  
+  .photo{
+    position: relative;
+    height: 265px;
+  }
+  
+  .photo img{
+    position: absolute;
+  }
+  
+  .btn-nav{
+    font-size: 40px;
+  }
+  .dots a{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: rgb(123, 118, 134);
+    margin: 5px;
+    border-radius: 50%;
+  }
