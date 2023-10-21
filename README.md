@@ -27,14 +27,14 @@
 Добавьте в структуру элемент контейнера 
 
 `` `` HTML
-&lt;div class=&quot;photo&quot;&gt;
-  &lt;img src=&quot;img/gallery_img1.jpg&quot; alt=&quot;&quot;&gt;
-  &lt;img src=&quot;img/gallery_img2.jpg&quot; alt=&quot;&quot;&gt;
-  &lt;img src=&quot;img/gallery_img3.jpg&quot; alt=&quot;&quot;&gt;
-  &lt;img src=&quot;img/gallery_img4.jpg&quot; alt=&quot;&quot;&gt;
-  &lt;img src=&quot;img/gallery_img5.jpg&quot; alt=&quot;&quot;&gt;
-  &lt;img src=&quot;img/gallery_img6.jpg&quot; alt=&quot;&quot;&gt;
-&lt;/div&gt;
+        <div class="photo">
+          <img src="img/gallery_img1.jpg" alt="">
+          <img src="img/gallery_img2.jpg" alt="">
+          <img src="img/gallery_img3.jpg" alt="">
+          <img src="img/gallery_img4.jpg" alt="">
+          <img src="img/gallery_img5.jpg" alt="">
+          <img src="img/gallery_img6.jpg" alt="">
+        </div>
 `` `
 ** ПРИМЕЧАНИЕ. ** Вы можете использовать другой класс или id. В таком случае при подключении модуля необходимо указать соответствующий класс.
 
