@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Multiply Documentation">
+    <meta name="description" content="Slider Documentation">
     
     <title>
-      Multiply | 5.0
+      Slider | 1.0
     </title>
 
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
@@ -26,7 +26,7 @@
         <div class="large-12 columns">
           <div class="brand left">
             <h3>
-              <a href="#">multiply.js</a> 
+              <a href="#">slider.js</a> 
             </h3>
           </div>
           <a id="toggle-nav" class="right">
@@ -84,27 +84,47 @@
             <hr>
             <h3 id="include-css">Подключение CSS</h3>
             <p>Сначала включите  файл CSS в HTML head:</p>
-            <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;multiply.css&quot;&gt;</code></pre>
+            <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</code></pre>
             
             <h3 id="include-js">Подключение JS</h3>
             <p>Подключите скрипты в указанном порядке перед закрывающим тегом body</p>
-            <pre><code>&lt;script src=&quot;lodash.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;multiply.js&quot;&gt;&n&lt;/script&gt;</code></pre>
+            <pre><code>&lt;script src=&quot;slider.js&quot;&gt;&lt;/script&gt;</code></pre>
             <h3 id="set-html">Структура HTML</h3>
-            <p>Вам не нужна специальная разметка. Все, что вам нужно, это добавить контейнер. 
+            <p>Всё что нужно, это вставить структуру ниже.
             Вы можете использовать другой класс или id. В таком случае при подключении плагина необходимо указать соответствующий класс.
 
             <pre><code>&lt;!-- Set up your HTML --&gt;
-&lt;div class=&quot;multiply&quot;&gt;&lt;/div&gt;</code></pre>
+&lt;div class=&quot;photo&quot;&gt;
+  &lt;img src=&quot;img/gallery_img1.jpg&quot; alt=&quot;&quot;&gt;
+  &lt;img src=&quot;img/gallery_img2.jpg&quot; alt=&quot;&quot;&gt;
+  &lt;img src=&quot;img/gallery_img3.jpg&quot; alt=&quot;&quot;&gt;
+  &lt;img src=&quot;img/gallery_img4.jpg&quot; alt=&quot;&quot;&gt;
+  &lt;img src=&quot;img/gallery_img5.jpg&quot; alt=&quot;&quot;&gt;
+  &lt;img src=&quot;img/gallery_img6.jpg&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+
+      &lt;!-- Arrow scrolling --&gt;
+&lt;div class=&quot;btn-nav&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;prev&quot; &gt;<&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;next&quot; &gt;>&lt;/a&gt;
+&lt;/div&gt;
+
+      &lt;!-- Point navigation --&gt;
+&lt;div class=&quot;dots&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
             
             <h3 id="call-the-plugin">Вызов плагина</h3>
-            <p>Теперь вызовите функцию инициализации  и ваша таблица умножения готова.</p>
+            <p>Теперь вызовите функцию инициализации и ваш слайдер готов.</p>
 
 
-            <pre><code>var multiply2 = new Multiply({ 
-    elem: document.querySelector('.table-multiply'),
-});
-</code></pre>
+            <pre><code>let slider = new Gallery ();</code></pre>
             <blockquote>
               <p>
                 <a href="../index.html">См. демо</a>  </p>
