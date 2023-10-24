@@ -15,7 +15,7 @@
              * Стандартные параметры слайдера
              */
             param = {
-                elem: param.elem || '#slider', 
+                elem: param.elem, 
                 showDots: param.showDots || 'true',
                 showBtnNav: param.showBtnNav || 'true',
             }
