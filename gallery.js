@@ -10,6 +10,18 @@
      * Загружает все необходимые элементы DOM и добавляет слушателей событий.
      */
     constructor (param) {
+    
+            /**
+             * Стандартные параметры слайдера
+             */
+        if(!param) {
+            param = {
+                elem: '#slider', 
+                showDots: true,
+                showBtnNav: true,
+            }
+        }
+
         this.slider = document.querySelector (param.elem);
         this.photos = this.slider.querySelectorAll ('.photo img');
         this.btnNav = this.slider.querySelectorAll ('.btn-nav a');
@@ -25,7 +37,6 @@
         }
 
         this.count = 0;
-        this.timer = '';
 
         if (param.showDots == true) {
             for (let i = 0; i < this.btnDots.length; i++) {
@@ -85,10 +96,3 @@
         }
     }
 };
-
-// Создание нового слайдера
-let slider = new Gallery ({
-    elem: '#slider', 
-    showDots: false,
-    showBtnNav: true,
-});
