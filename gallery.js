@@ -9,23 +9,36 @@
      * Инициализация объекта слайдера.
      * Загружает все необходимые элементы DOM и добавляет слушателей событий.
      */
-    constructor () {
-        this.slider = document.querySelector ('#slider');
+    constructor (param) {
+        this.slider = document.querySelector (param.elem);
         this.photos = this.slider.querySelectorAll ('.photo img');
         this.btnNav = this.slider.querySelectorAll ('.btn-nav a');
         this.btnDots = this.slider.querySelectorAll ('.dots a');
 
-        this.btnNav[0].addEventListener('click', () => this.prevPhoto ());
-        this.btnNav[1].addEventListener('click', () => this.nextPhoto ());
+        if (param.showBtnNav == true) {
+            this.btnNav[0].addEventListener('click', () => this.prevPhoto ());
+            this.btnNav[1].addEventListener('click', () => this.nextPhoto ());
+        }
+        else {
+            this.btnNav[0].style.display = 'none';
+            this.btnNav[1].style.display = 'none';
+        }
 
         this.count = 0;
         this.timer = '';
 
-        for (let i = 0; i < this.btnDots.length; i++) {
-            this.btnDots[i].addEventListener ('click', () => {
-                this.count = i;
-                this.showImg (i);
-            });
+        if (param.showDots == true) {
+            for (let i = 0; i < this.btnDots.length; i++) {
+                this.btnDots[i].addEventListener ('click', () => {
+                    this.count = i;
+                    this.showImg (i);
+                });
+            }
+        }
+        else {
+            for (let i = 0; i <this.btnDots.length; i++) {
+                this.btnDots[i].style.display = 'none';
+            }
         }
     }
 
