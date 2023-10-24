@@ -74,4 +74,8 @@
 };
 
 // Создание нового слайдера
-let slider = new Gallery ();
+let slider = new Gallery ({
+    elem: '#slider', 
+    showDots: false,
+    showBtnNav: true,
+});
