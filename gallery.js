@@ -14,13 +14,11 @@
             /**
              * Стандартные параметры слайдера
              */
-        if(!param) {
             param = {
-                elem: '#slider', 
-                showDots: true,
-                showBtnNav: true,
+                elem: param.elem || '#slider', 
+                showDots: param.showDots || 'true',
+                showBtnNav: param.showBtnNav || 'true',
             }
-        }
 
         this.slider = document.querySelector (param.elem);
         this.photos = this.slider.querySelectorAll ('.photo img');
