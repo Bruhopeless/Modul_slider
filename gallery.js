@@ -15,9 +15,9 @@
              * Стандартные параметры слайдера
              */
             param = {
-                elem: param.elem || '#slider', 
-                showDots: param.showDots || 'true',
-                showBtnNav: param.showBtnNav || 'true',
+                elem: param?.elem || '#slider',
+                showDots: this.valueExist(param?.showDots) ? param.showDots : true,
+                showBtnNav: this.valueExist(param?.showBtnNav) ? param.showBtnNav : true,
             }
 
         this.slider = document.querySelector (param.elem);
@@ -49,6 +49,13 @@
                 this.btnDots[i].style.display = 'none';
             }
         }
+    }
+
+    valueExist (param) {
+        if(param === null || param === undefined) {
+            return false;
+        }
+        return true;
     }
 
     /**
